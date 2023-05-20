@@ -13,11 +13,11 @@ provider "google" {
   zone    = "europe-west2-a"
 }
 
-# locals {
-#   labels = {
-#     "data-project" = var.data-project
-#   }
-# }
+locals {
+  labels = {
+    "data-project" = var.data-project
+  }
+}
 
 resource "google_compute_disk" "default" {
   name  = "test-disk"

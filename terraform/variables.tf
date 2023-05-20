@@ -11,4 +11,5 @@ variable "region" {
 variable "data-project" {
   type        = string
   description = "Name of data pipeline project to use as resource prefix"
+  default     = "sandbox-johnny-boniface"
 }
